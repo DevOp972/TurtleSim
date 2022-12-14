@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" />
+  <node pkg="rosservice" type="rosservice" name="rosservice" args="call /kill &quot;turtle1&quot;" />
+  <node pkg="rosservice" type="rosservice" name="rosservice2" args="call /spawn 5.5 2.75 0 &quot;turtlebot2&quot;" />
+  <node pkg="rosservice" type="rosservice" name="rosservice3" args="call /spawn 9.9 0.9 0 &quot;turtlebot1&quot;" />
+</launch>
